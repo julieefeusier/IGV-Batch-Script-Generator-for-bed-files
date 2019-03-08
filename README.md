@@ -4,7 +4,7 @@ These scripts generate IGV batch scripts from bed files. The script can be loade
 
 These scripts take a bed file and generate an IGV batch file that can be uploaded through IGV. The script requires column 4 of the bed file to be the name of the bam file (see example.bed). It is best to sort the bed file by the bam names, because IGV runs faster when it doesn't have to reload the bam for each image.
 
-
+**IGV_snapshot_batch_generator_from_bed.py**
 Example using a 500bp buffer around the bed region (recommended for looking at 1bp region): 
 
 **example.bed**:<br/>
@@ -34,7 +34,7 @@ collapse<br/>
 snapshot chr5:799500-800501_sample2.png<br/>
 
 
-IGV_snapshot_batch_generator_from_bed_trio.py takes in a ped file and generates an IGV image of a trio (child, dad, mom)
+**IGV_snapshot_batch_generator_from_bed_trio.py** takes in a ped file and generates an IGV image of a trio (child, dad, mom)
 
 **example.ped**<br/>
 pedigree1       sample1 sample1_father  sample1_mother  1       0<br/>
