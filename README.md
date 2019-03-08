@@ -61,7 +61,6 @@ load /vbod2/CEPH_BAMs/sample2.bam<br/>
 load /vbod2/CEPH_BAMs/sample2_father.bam<br/>
 load /vbod2/CEPH_BAMs/sample2_mother.bam<br/>
 goto chr5:799500-800501<br/>
-sort<br/><br/>
+sort<br/>
 collapse<br/>
 snapshot chr5:799500-800501_sample2_trio.png<br/>
-
