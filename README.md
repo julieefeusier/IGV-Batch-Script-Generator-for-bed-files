@@ -15,7 +15,7 @@ Example using a 500bp buffer around the bed region (recommended for looking at 1
 ```
 python2.7 IGV_snapshot_batch_generator_from_bed.py example.bed /file/to/bams/ /snapshot_directory/ 500
 ```
-snapshotDirectory /snapshot_directory/
+snapshotDirectory /snapshot_directory/<br/>
 new<br/>
 load /file/to/bams/sample1.bam<br/>
 goto chr1:999500-1000501<br/>
