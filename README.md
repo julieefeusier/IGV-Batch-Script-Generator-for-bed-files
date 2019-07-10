@@ -47,7 +47,7 @@ sort -k4,1 locations.bed > locations_sorted.bed
 **IGV_snapshot_batch_generator_from_bed.py**
 Example using a 500bp buffer around the bed region (recommended for looking at 1bp region): 
 ```
-python IGV_snapshot_batch_generator_from_bed_v5.py -i /path/to/locations_sorted.bed -b /path/to/bam_directory/ -s /path/to/snapshot_directory/ -bp 500 -o locations_IGV_batch.txt
+python IGV_snapshot_batch_generator_from_bed.py -i /path/to/locations_sorted.bed -b /path/to/bam_directory/ -s /path/to/snapshot_directory/ -bp 500 -o locations_IGV_batch.txt
 ```
 snapshotDirectory /snapshot_directory/<br/>
 new<br/>
@@ -75,7 +75,7 @@ pedigree1       sample1 sample1_father  sample1_mother  1       0<br/>
 pedigree2       sample2 sample2_father  sample2_mother  2       0<br/>
 
 ```
-python IGV_snapshot_batch_generator_from_bed_v5.py -i /path/to/locations_sorted.bed -b /path/to/bam_directory/ -s /path/to/snapshot_directory/ -bp 500 -o locations_IGV_batch.txt -p /path/to/example.ped
+python IGV_snapshot_batch_generator_from_bed.py -i /path/to/locations_sorted.bed -b /path/to/bam_directory/ -s /path/to/snapshot_directory/ -bp 500 -o locations_IGV_batch.txt -p /path/to/example.ped
 ```
 
 snapshotDirectory /snapshot_directory/<br/>
