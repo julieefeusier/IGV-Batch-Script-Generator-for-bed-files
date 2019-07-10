@@ -12,7 +12,7 @@ usage: IGV_snapshot_batch_generator_from_bed.py [-h] -i INPUT BED
 optional arguments:
   -h, --help            show this help message and exit
   -o OUTPUT IGV BATCH SCRIPT, --out OUTPUT IGV BATCH SCRIPT
-                        output IGV batch script name/path
+                        output IGV batch script. Will default to stdout
   -bp BP BUFFER, --buffer BP BUFFER
                         bp buffer around locus in IGV
   -p PED FILE, --ped PED FILE

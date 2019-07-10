@@ -13,7 +13,7 @@ requiredNamed.add_argument('-i', '--in',
 parser.add_argument('-o', '--out',
                     metavar='OUTPUT IGV BATCH SCRIPT',
                     dest="o",
-                    help='output IGV batch script name/path')
+                    help='output IGV batch script. Will default to stdout')
 
 requiredNamed.add_argument('-b', '--bam_dir',
                     metavar='BAM DIRECTORY',
@@ -87,8 +87,6 @@ else:
 lines=open(input_file1,'rt')
 pos_upstream = ""
 pos_downstream = ""
-
-#f=open(output_file, 'w+')
 
 f.write(str("snapshotDirectory " + snapshot_directory + '\n'))
 sample_prev = ""
