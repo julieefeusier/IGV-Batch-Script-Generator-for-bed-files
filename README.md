@@ -3,7 +3,7 @@ This script generates IGV batch scripts from bed files. The script can be loaded
 
 **usage**:<br/>
 ```
-usage: usage: IGV_snapshot_batch_generator_from_bed.py [-h] -i INPUT BED
+usage: IGV_snapshot_batch_generator_from_bed.py [-h] -i INPUT BED
                                                 [-o OUTPUT IGV BATCH SCRIPT]
                                                 -b BAM DIRECTORY -s SNAPSHOT
                                                 DIRECTORY [-bp BP BUFFER]
