@@ -3,8 +3,8 @@ import sys
 from argparse import ArgumentParser
 
 parser = ArgumentParser()
-
-parser.add_argument('-i', '--in',
+requiredNamed = parser.add_argument_group('required named arguments')
+requiredNamed.add_argument('-i', '--in',
                     metavar='INPUT BED',
                     dest="i",
                     required=True,
@@ -15,13 +15,13 @@ parser.add_argument('-o', '--out',
                     dest="o",
                     help='output IGV batch script name/path')
 
-parser.add_argument('-b', '--bam_dir',
+requiredNamed.add_argument('-b', '--bam_dir',
                     metavar='BAM DIRECTORY',
                     required=True,
                     dest="b",
                     help='path to bam directory')
 
-parser.add_argument('-s', '--snapshot_dir',
+requiredNamed.add_argument('-s', '--snapshot_dir',
                     metavar='SNAPSHOT DIRECTORY',
                     required=True,
                     dest="d",
