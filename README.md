@@ -49,7 +49,7 @@ Example using a 500bp buffer around the bed region (recommended for looking at 1
 ```
 python IGV_snapshot_batch_generator_from_bed.py -i /path/to/locations_sorted.bed -b /path/to/bam_directory/ -s /path/to/snapshot_directory/ -bp 500 -o locations_IGV_batch.txt
 ```
-snapshotDirectory /snapshot_directory/<br/>
+snapshotDirectory /path/to/snapshot_directory/<br/>
 new<br/>
 load /file/to/bams/sample1.bam<br/>
 goto chr1:999500-1000501<br/>
@@ -79,7 +79,7 @@ pedigree2       sample2 sample2_father  sample2_mother  2       0<br/>
 python IGV_snapshot_batch_generator_from_bed.py -i /path/to/locations_sorted.bed -b /path/to/bam_directory/ -s /path/to/snapshot_directory/ -bp 500 -o locations_IGV_batch.txt -p /path/to/example.ped
 ```
 
-snapshotDirectory /snapshot_directory/<br/>
+snapshotDirectory /path/to/snapshot_directory/<br/>
 new<br/>
 load /vbod2/CEPH_BAMs/sample1.bam<br/>
 load /vbod2/CEPH_BAMs/sample1_father.bam<br/>
