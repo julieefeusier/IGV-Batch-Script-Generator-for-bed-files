@@ -1,7 +1,7 @@
 # IGV-Batch-Script-Generator-for-bed-files
-This script generates IGV batch scripts from bed files. The script can be loaded into IGV for automatic generation of images on the command line.
+This script generates IGV batch scripts from bed files. The script can be loaded into IGV for automatic generation of images on the command line. More information on IGV batch files is located here: https://software.broadinstitute.org/software/igv/batch.
 
-**usage**:<br/>
+# Usage<br/>
 ```
 usage: IGV_snapshot_batch_generator_from_bed.py [-h] -i INPUT BED
                                                 [-o OUTPUT IGV BATCH SCRIPT]
@@ -44,7 +44,7 @@ sort -k4,1 locations.bed > locations_sorted.bed
   chr5    800000  800001  sample2.bam<br/>
 
 
-**IGV_snapshot_batch_generator_from_bed.py**
+# Example<br/>
 Example using a 500bp buffer around the bed region (recommended for looking at 1bp region): 
 ```
 python IGV_snapshot_batch_generator_from_bed.py -i /path/to/locations_sorted.bed -b /path/to/bam_directory/ -s /path/to/snapshot_directory/ -bp 500 -o locations_IGV_batch.txt
@@ -68,7 +68,8 @@ collapse<br/>
 snapshot chr5:799500-800501_sample2.png<br/>
 
 
-**Trio option** -p takes in a ped file and generates an IGV image of a trio (child, dad, mom)
+## Trio option<br/>
+The option -p takes in a ped file and generates an IGV image of a trio (child, dad, mom)
 
 **example.ped**<br/>
 pedigree1       sample1 sample1_father  sample1_mother  1       0<br/>
